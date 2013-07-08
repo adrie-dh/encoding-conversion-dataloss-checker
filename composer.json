@@ -1,0 +1,20 @@
+{
+    "name": "encoding-tester/encoding-tester",
+    "type": "library",
+    "description": "Standalone library to test the whether a string's content would survive charset encoding to another encoding standard",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adrie den Hartog"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "EncodingTester": "" }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
