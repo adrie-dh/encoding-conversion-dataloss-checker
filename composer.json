@@ -1,5 +1,5 @@
 {
-    "name": "encoding-tester/encoding-tester",
+    "name": "encoding-conversion-dataloss-checker/encoding-conversion-dataloss-checker",
     "type": "library",
     "description": "Standalone library to test the whether a string's content would survive charset encoding to another encoding standard",
     "license": "MIT",
