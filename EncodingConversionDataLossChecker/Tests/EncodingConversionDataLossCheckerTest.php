@@ -167,9 +167,9 @@ class EncodingConversionDataLossCheckerTest extends \PHPUnit_Framework_TestCase
 
         $tester = new EncodingConversionDataLossChecker('UTF-8', 'ISO-8859-1');
         $diffArray = $tester->diagnose($testString);
-
+echo var_export($diffArray,true);
         $this->assertEquals(
-            array(
+            array (
                 0 =>
                 array (
                     'startPos' => 13,
@@ -178,493 +178,493 @@ class EncodingConversionDataLossCheckerTest extends \PHPUnit_Framework_TestCase
                 ),
                 1 =>
                 array (
-                    'startPos' => 36,
+                    'startPos' => 35,
                     'characters' => 'Μπορώ',
                     'length' => 5,
                 ),
                 2 =>
                 array (
-                    'startPos' => 42,
+                    'startPos' => 41,
                     'characters' => 'να',
                     'length' => 2,
                 ),
                 3 =>
                 array (
-                    'startPos' => 45,
+                    'startPos' => 44,
                     'characters' => 'φάω',
                     'length' => 3,
                 ),
                 4 =>
                 array (
-                    'startPos' => 49,
+                    'startPos' => 48,
                     'characters' => 'σπασμένα',
                     'length' => 8,
                 ),
                 5 =>
                 array (
-                    'startPos' => 58,
+                    'startPos' => 57,
                     'characters' => 'γυαλιά',
                     'length' => 6,
                 ),
                 6 =>
                 array (
-                    'startPos' => 65,
+                    'startPos' => 64,
                     'characters' => 'χωρίς',
                     'length' => 5,
                 ),
                 7 =>
                 array (
-                    'startPos' => 71,
+                    'startPos' => 70,
                     'characters' => 'να',
                     'length' => 2,
                 ),
                 8 =>
                 array (
-                    'startPos' => 74,
+                    'startPos' => 73,
                     'characters' => 'πάθω',
                     'length' => 4,
                 ),
                 9 =>
                 array (
-                    'startPos' => 79,
+                    'startPos' => 78,
                     'characters' => 'τίποτα',
                     'length' => 6,
                 ),
                 10 =>
                 array (
-                    'startPos' => 185,
+                    'startPos' => 182,
                     'characters' => 'ę',
                     'length' => 1,
                 ),
                 11 =>
                 array (
-                    'startPos' => 189,
+                    'startPos' => 186,
                     'characters' => 'ść',
                     'length' => 2,
                 ),
                 12 =>
                 array (
-                    'startPos' => 195,
+                    'startPos' => 192,
                     'characters' => 'ł',
                     'length' => 1,
                 ),
                 13 =>
                 array (
-                    'startPos' => 245,
+                    'startPos' => 241,
                     'characters' => 'ă',
                     'length' => 1,
                 ),
                 14 =>
                 array (
-                    'startPos' => 248,
+                    'startPos' => 244,
                     'characters' => 'ă',
                     'length' => 1,
                 ),
                 15 =>
                 array (
-                    'startPos' => 259,
+                    'startPos' => 255,
                     'characters' => 'ă',
                     'length' => 1,
                 ),
                 16 =>
                 array (
-                    'startPos' => 261,
+                    'startPos' => 257,
                     'characters' => 'ș',
                     'length' => 1,
                 ),
                 17 =>
                 array (
-                    'startPos' => 271,
+                    'startPos' => 267,
                     'characters' => 'ă',
                     'length' => 1,
                 ),
                 18 =>
                 array (
-                    'startPos' => 274,
+                    'startPos' => 270,
                     'characters' => 'ă',
                     'length' => 1,
                 ),
                 19 =>
                 array (
-                    'startPos' => 277,
+                    'startPos' => 273,
                     'characters' => 'ș',
                     'length' => 1,
                 ),
                 20 =>
                 array (
-                    'startPos' => 306,
+                    'startPos' => 301,
                     'characters' => 'Я',
                     'length' => 1,
                 ),
                 21 =>
                 array (
-                    'startPos' => 308,
+                    'startPos' => 303,
                     'characters' => 'можу',
                     'length' => 4,
                 ),
                 22 =>
                 array (
-                    'startPos' => 313,
+                    'startPos' => 308,
                     'characters' => 'їсти',
                     'length' => 4,
                 ),
                 23 =>
                 array (
-                    'startPos' => 318,
+                    'startPos' => 313,
                     'characters' => 'шкло',
                     'length' => 4,
                 ),
                 24 =>
                 array (
-                    'startPos' => 324,
+                    'startPos' => 319,
                     'characters' => 'й',
                     'length' => 1,
                 ),
                 25 =>
                 array (
-                    'startPos' => 326,
+                    'startPos' => 321,
                     'characters' => 'воно',
                     'length' => 4,
                 ),
                 26 =>
                 array (
-                    'startPos' => 331,
+                    'startPos' => 326,
                     'characters' => 'мені',
                     'length' => 4,
                 ),
                 27 =>
                 array (
-                    'startPos' => 336,
+                    'startPos' => 331,
                     'characters' => 'не',
                     'length' => 2,
                 ),
                 28 =>
                 array (
-                    'startPos' => 339,
+                    'startPos' => 334,
                     'characters' => 'пошкодить',
                     'length' => 9,
                 ),
                 29 =>
                 array (
-                    'startPos' => 373,
+                    'startPos' => 367,
                     'characters' => 'Կրնամ',
                     'length' => 5,
                 ),
                 30 =>
                 array (
-                    'startPos' => 379,
+                    'startPos' => 373,
                     'characters' => 'ապակի',
                     'length' => 5,
                 ),
                 31 =>
                 array (
-                    'startPos' => 385,
+                    'startPos' => 379,
                     'characters' => 'ուտել',
                     'length' => 5,
                 ),
                 32 =>
                 array (
-                    'startPos' => 391,
+                    'startPos' => 385,
                     'characters' => 'և',
                     'length' => 1,
                 ),
                 33 =>
                 array (
-                    'startPos' => 393,
+                    'startPos' => 387,
                     'characters' => 'ինծի',
                     'length' => 4,
                 ),
                 34 =>
                 array (
-                    'startPos' => 398,
+                    'startPos' => 392,
                     'characters' => 'անհանգիստ',
                     'length' => 9,
                 ),
                 35 =>
                 array (
-                    'startPos' => 408,
+                    'startPos' => 402,
                     'characters' => 'չըներ։',
                     'length' => 6,
                 ),
                 36 =>
                 array (
-                    'startPos' => 438,
+                    'startPos' => 431,
                     'characters' => 'მინას',
                     'length' => 5,
                 ),
                 37 =>
                 array (
-                    'startPos' => 444,
+                    'startPos' => 437,
                     'characters' => 'ვჭამ',
                     'length' => 4,
                 ),
                 38 =>
                 array (
-                    'startPos' => 449,
+                    'startPos' => 442,
                     'characters' => 'და',
                     'length' => 2,
                 ),
                 39 =>
                 array (
-                    'startPos' => 452,
+                    'startPos' => 445,
                     'characters' => 'არა',
                     'length' => 3,
                 ),
                 40 =>
                 array (
-                    'startPos' => 456,
+                    'startPos' => 449,
                     'characters' => 'მტკივა',
                     'length' => 6,
                 ),
                 41 =>
                 array (
-                    'startPos' => 484,
+                    'startPos' => 476,
                     'characters' => 'मैं',
                     'length' => 3,
                 ),
                 42 =>
                 array (
-                    'startPos' => 488,
+                    'startPos' => 480,
                     'characters' => 'काँच',
                     'length' => 4,
                 ),
                 43 =>
                 array (
-                    'startPos' => 493,
+                    'startPos' => 485,
                     'characters' => 'खा',
                     'length' => 2,
                 ),
                 44 =>
                 array (
-                    'startPos' => 496,
+                    'startPos' => 488,
                     'characters' => 'सकता',
                     'length' => 4,
                 ),
                 45 =>
                 array (
-                    'startPos' => 501,
+                    'startPos' => 493,
                     'characters' => 'हूँ',
                     'length' => 3,
                 ),
                 46 =>
                 array (
-                    'startPos' => 506,
+                    'startPos' => 498,
                     'characters' => 'मुझे',
                     'length' => 4,
                 ),
                 47 =>
                 array (
-                    'startPos' => 511,
+                    'startPos' => 503,
                     'characters' => 'उस',
                     'length' => 2,
                 ),
                 48 =>
                 array (
-                    'startPos' => 514,
+                    'startPos' => 506,
                     'characters' => 'से',
                     'length' => 2,
                 ),
                 49 =>
                 array (
-                    'startPos' => 517,
+                    'startPos' => 509,
                     'characters' => 'कोई',
                     'length' => 3,
                 ),
                 50 =>
                 array (
-                    'startPos' => 521,
+                    'startPos' => 513,
                     'characters' => 'पीडा',
                     'length' => 4,
                 ),
                 51 =>
                 array (
-                    'startPos' => 526,
+                    'startPos' => 518,
                     'characters' => 'नहीं',
                     'length' => 4,
                 ),
                 52 =>
                 array (
-                    'startPos' => 531,
+                    'startPos' => 523,
                     'characters' => 'होती',
                     'length' => 4,
                 ),
                 53 =>
                 array (
-                    'startPos' => 561,
+                    'startPos' => 552,
                     'characters' => 'אני',
                     'length' => 3,
                 ),
                 54 =>
                 array (
-                    'startPos' => 565,
+                    'startPos' => 556,
                     'characters' => 'יכול',
                     'length' => 4,
                 ),
                 55 =>
                 array (
-                    'startPos' => 570,
+                    'startPos' => 561,
                     'characters' => 'לאכול',
                     'length' => 5,
                 ),
                 56 =>
                 array (
-                    'startPos' => 576,
+                    'startPos' => 567,
                     'characters' => 'זכוכית',
                     'length' => 6,
                 ),
                 57 =>
                 array (
-                    'startPos' => 583,
+                    'startPos' => 574,
                     'characters' => 'וזה',
                     'length' => 3,
                 ),
                 58 =>
                 array (
-                    'startPos' => 587,
+                    'startPos' => 578,
                     'characters' => 'לא',
                     'length' => 2,
                 ),
                 59 =>
                 array (
-                    'startPos' => 590,
+                    'startPos' => 581,
                     'characters' => 'מזיק',
                     'length' => 4,
                 ),
                 60 =>
                 array (
-                    'startPos' => 595,
+                    'startPos' => 586,
                     'characters' => 'לי',
                     'length' => 2,
                 ),
                 61 =>
                 array (
-                    'startPos' => 624,
+                    'startPos' => 614,
                     'characters' => 'איך',
                     'length' => 3,
                 ),
                 62 =>
                 array (
-                    'startPos' => 628,
+                    'startPos' => 618,
                     'characters' => 'קען',
                     'length' => 3,
                 ),
                 63 =>
                 array (
-                    'startPos' => 632,
+                    'startPos' => 622,
                     'characters' => 'עסן',
                     'length' => 3,
                 ),
                 64 =>
                 array (
-                    'startPos' => 636,
+                    'startPos' => 626,
                     'characters' => 'גלאָז',
                     'length' => 5,
                 ),
                 65 =>
                 array (
-                    'startPos' => 642,
+                    'startPos' => 632,
                     'characters' => 'און',
                     'length' => 3,
                 ),
                 66 =>
                 array (
-                    'startPos' => 646,
+                    'startPos' => 636,
                     'characters' => 'עס',
                     'length' => 2,
                 ),
                 67 =>
                 array (
-                    'startPos' => 649,
+                    'startPos' => 639,
                     'characters' => 'טוט',
                     'length' => 3,
                 ),
                 68 =>
                 array (
-                    'startPos' => 653,
+                    'startPos' => 643,
                     'characters' => 'מיר',
                     'length' => 3,
                 ),
                 69 =>
                 array (
-                    'startPos' => 657,
+                    'startPos' => 647,
                     'characters' => 'נישט',
                     'length' => 4,
                 ),
                 70 =>
                 array (
-                    'startPos' => 662,
+                    'startPos' => 652,
                     'characters' => 'װײ',
                     'length' => 2,
                 ),
                 71 =>
                 array (
-                    'startPos' => 690,
+                    'startPos' => 679,
                     'characters' => 'أنا',
                     'length' => 3,
                 ),
                 72 =>
                 array (
-                    'startPos' => 694,
+                    'startPos' => 683,
                     'characters' => 'قادر',
                     'length' => 4,
                 ),
                 73 =>
                 array (
-                    'startPos' => 699,
+                    'startPos' => 688,
                     'characters' => 'على',
                     'length' => 3,
                 ),
                 74 =>
                 array (
-                    'startPos' => 703,
+                    'startPos' => 692,
                     'characters' => 'أكل',
                     'length' => 3,
                 ),
                 75 =>
                 array (
-                    'startPos' => 707,
+                    'startPos' => 696,
                     'characters' => 'الزجاج',
                     'length' => 6,
                 ),
                 76 =>
                 array (
-                    'startPos' => 714,
+                    'startPos' => 703,
                     'characters' => 'و',
                     'length' => 1,
                 ),
                 77 =>
                 array (
-                    'startPos' => 716,
+                    'startPos' => 705,
                     'characters' => 'هذا',
                     'length' => 3,
                 ),
                 78 =>
                 array (
-                    'startPos' => 720,
+                    'startPos' => 709,
                     'characters' => 'لا',
                     'length' => 2,
                 ),
                 79 =>
                 array (
-                    'startPos' => 723,
+                    'startPos' => 712,
                     'characters' => 'يؤلمني',
                     'length' => 6,
                 ),
                 80 =>
                 array (
-                    'startPos' => 754,
+                    'startPos' => 742,
                     'characters' => '私はガラスを食べられます。それは私を傷つけません。',
                     'length' => 25,
                 ),
                 81 =>
                 array (
-                    'startPos' => 799,
+                    'startPos' => 786,
                     'characters' => 'ฉันกินกระจกได้',
                     'length' => 14,
                 ),
                 82 =>
                 array (
-                    'startPos' => 814,
+                    'startPos' => 801,
                     'characters' => 'แต่มันไม่ทำให้ฉันเจ็บ',
                     'length' => 21,
                 ),
