@@ -52,7 +52,7 @@ class EncodingConversionDataLossChecker
     {
         $this->testInputStringAgainstEncoding($string, $this->fromEncoding);
 
-        $testDouble = $this->generateReEncodedTestDouble(
+        $testDouble = $this->generateReEncodedCopy(
             $string,
             $this->fromEncoding,
             $this->toEncoding
@@ -100,7 +100,7 @@ class EncodingConversionDataLossChecker
         }
     }
 
-    private function generateReEncodedTestDouble ($string, $fromEncoding, $toEncoding)
+    private function generateReEncodedCopy ($string, $fromEncoding, $toEncoding)
     {
         /**
          * Convert it twice. First from-to, then to-from.
