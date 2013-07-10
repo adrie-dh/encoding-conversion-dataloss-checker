@@ -167,7 +167,7 @@ class EncodingConversionDataLossCheckerTest extends \PHPUnit_Framework_TestCase
 
         $tester = new EncodingConversionDataLossChecker('UTF-8', 'ISO-8859-1');
         $diffArray = $tester->diagnose($testString);
-echo var_export($diffArray,true);
+
         $this->assertEquals(
             array (
                 0 =>
