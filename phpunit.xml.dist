@@ -11,8 +11,8 @@
          bootstrap="vendor/autoload.php"
         >
     <testsuites>
-        <testsuite name="EncodingTester Test Suite">
-            <directory>EncodingTester</directory>
+        <testsuite name="EncodingConversionDataLossChecker Test Suite">
+            <directory>EncodingConversionDataLossChecker</directory>
         </testsuite>
     </testsuites>
 </phpunit>
